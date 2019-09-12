@@ -14,21 +14,21 @@ Answer the following questions. First, without external resources. Challenge you
 
 2. Using the information given, fill in the blanks to complete the steps for creating a new view in a Rails application.
 
-  Step 1: Create the _________ in the file config/routes
+  Step 1: Create the ____route_____ in the file config/routes
   ```
   get '/about' => 'statics#about'
   ```
 
-  Step 2: Create the ____________ in the file _____________
+  Step 2: Create the ____controller________ in the file _______app/controller______
   ```
-  class ____________ < ApplicationController
-    def ___________
-      render: ________________
+  class ________Statics____ < ApplicationController
+    def ___about____
+      render: ______'text'__________
     end
   end
   ```
 
-  Step 3: Create the View in the file ______________
+  Step 3: Create the View in the file _______statics.html.erb_______
   code:
   ```
   <div>This is the About page!</div>
@@ -48,8 +48,7 @@ Answer the following questions. First, without external resources. Challenge you
 ```
 
 
-
-
+The GET method reads data, the POST method creates new data, PUTS updates data, and DELETE well just erases data.
 
 4. What is the public folder used for in Rails?
 
@@ -74,9 +73,9 @@ Answer the following questions. First, without external resources. Challenge you
 
 7. In an html form, what does the "action" attribute tell you about the form? How do you designate the HTTP verb for the form?
 
-  Your answer:
+  Your answer: n/a
 
-  Researched answer:
+  Researched answer:The pourpose of the HTML action attribute is to specify a URL of a from processor (ex php script)
 
 
 
@@ -94,8 +93,8 @@ Answer the following questions. First, without external resources. Challenge you
 - [Rails for Zombies](http://railsforzombies.org)
 - [Rails Guides](http://guides.rubyonrails.org/getting_started.html)
 
-1.
+1. Rails was written in Ruby by Mr. Hansson
 
-2.
+2. Routing errors occur when because the route needs to have a controller defined in order to serve the request.
 
-3.
+3.Strong params are require us to tell Rials exactly which parameters are allowed into our action controller 
