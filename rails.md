@@ -5,29 +5,30 @@ Answer the following questions. First, without external resources. Challenge you
 
 1. MVC (Model View Controller) is a pattern for the architecture of a software program. Give a brief description of each component and describe how Ruby on Rails handles MVC.
 
-  Your answer:
+  Your answer: Views is where where you see what youve asked for.
 
-  Researched answer:
-
+  Researched answer: Models: For handling data and logic. Views: For handling graphical user interface and presentation. Controller: For handling the user interface
+    and presentation. Rails promotes the concept that Models, Views, and Controller should be kept separate by storing the code for each element as separate files in 
+    separate directories.
 
 
 2. Using the information given, fill in the blanks to complete the steps for creating a new view in a Rails application.
 
-  Step 1: Create the _________ in the file config/routes
+  Step 1: Create the ____route_____ in the file config/routes
   ```
   get '/about' => 'statics#about'
   ```
 
-  Step 2: Create the ____________ in the file _____________
+  Step 2: Create the ____controller________ in the file _______app/controller______
   ```
-  class ____________ < ApplicationController
-    def ___________
-      render: ________________
+  class ________Statics____ < ApplicationController
+    def ___about____
+      render: ______'text'__________
     end
   end
   ```
 
-  Step 3: Create the View in the file ______________
+  Step 3: Create the View in the file _______statics.html.erb_______
   code:
   ```
   <div>This is the About page!</div>
@@ -47,14 +48,13 @@ Answer the following questions. First, without external resources. Challenge you
 ```
 
 
-
-
+The GET method reads data, the POST method creates new data, PUTS updates data, and DELETE well just erases data.
 
 4. What is the public folder used for in Rails?
 
-  Your answer:
+  Your answer: n/a
 
-  Researched answer:
+  Researched answer:The public folder is where common files for web applications are located. By default HTML templates for HTTP errors.
 
 
 
@@ -64,25 +64,28 @@ Answer the following questions. First, without external resources. Challenge you
 
 6. What are cookies? What is the difference between a session and a cookie?
 
-  Your answer:
+  Your answer: Cookies store information for later use. 
 
-  Researched answer:
+  Researched answer:Cookies and Sessions are used to store information. Cookies are only stored in the client-side machine, while Sessions get 
+    stored in both the client machine and the server. 
 
 
 
 7. In an html form, what does the "action" attribute tell you about the form? How do you designate the HTTP verb for the form?
 
-  Your answer:
+  Your answer: n/a
 
-  Researched answer:
+  Researched answer:The pourpose of the HTML action attribute is to specify a URL of a from processor (ex php script)
 
 
 
 8. Name two rails generator commands and what files they create:
 
-  Your answer:
+  Your answer: generate controller, creates the controller file system and generate resource creates a column. 
 
-  Researched answer:
+  Researched answer:The most commonly used generators are Controller, Model, Resource, and Scaffold. Controller is unique in that you dont 
+    put column names and types after the controller name, but you put the methods you want to include in your new controller. Resource 
+    you enter the name of the resource you want to create along with the table column names and types. 
 
 
 9. Rails has a great community and lots of free tutorials to help you learn. Choose one of these resources and look through the material for 10-15 min. List three new things you learned about Rails:
@@ -90,8 +93,8 @@ Answer the following questions. First, without external resources. Challenge you
 - [Rails for Zombies](http://railsforzombies.org)
 - [Rails Guides](http://guides.rubyonrails.org/getting_started.html)
 
-1.
+1. Rails was written in Ruby by Mr. Hansson
 
-2.
+2. Routing errors occur when because the route needs to have a controller defined in order to serve the request.
 
-3.
+3.Strong params are require us to tell Rials exactly which parameters are allowed into our action controller 
